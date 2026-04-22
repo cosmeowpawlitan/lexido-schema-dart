@@ -54,6 +54,7 @@ Class | Method | HTTP request | Description
 
  - [BookkeepingInner](doc//BookkeepingInner.md)
  - [Exercise](doc//Exercise.md)
+ - [ExerciseContent](doc//ExerciseContent.md)
  - [Expenditure](doc//Expenditure.md)
  - [ExpenditureSplit](doc//ExpenditureSplit.md)
  - [FillInTheBlank](doc//FillInTheBlank.md)

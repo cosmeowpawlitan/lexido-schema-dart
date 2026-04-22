@@ -14,6 +14,7 @@ class Exercise {
   /// Returns a new [Exercise] instance.
   Exercise({
     this.meta = const {},
+    required this.content,
     required this.kind,
     required this.title,
     required this.usability,
@@ -23,6 +24,8 @@ class Exercise {
   });
 
   Map<String, Object> meta;
+
+  ExerciseContent content;
 
   String kind;
 
@@ -39,6 +42,7 @@ class Exercise {
   @override
   bool operator ==(Object other) => identical(this, other) || other is Exercise &&
     _deepEquality.equals(other.meta, meta) &&
+    other.content == content &&
     other.kind == kind &&
     other.title == title &&
     other.usability == usability &&
@@ -50,6 +54,7 @@ class Exercise {
   int get hashCode =>
     // ignore: unnecessary_parenthesis
     (meta.hashCode) +
+    (content.hashCode) +
     (kind.hashCode) +
     (title.hashCode) +
     (usability.hashCode) +
@@ -58,11 +63,12 @@ class Exercise {
     (questions.hashCode);
 
   @override
-  String toString() => 'Exercise[meta=$meta, kind=$kind, title=$title, usability=$usability, keyVocabolary=$keyVocabolary, description=$description, questions=$questions]';
+  String toString() => 'Exercise[meta=$meta, content=$content, kind=$kind, title=$title, usability=$usability, keyVocabolary=$keyVocabolary, description=$description, questions=$questions]';
 
   Map<String, dynamic> toJson() {
     final json = <String, dynamic>{};
       json[r'meta'] = this.meta;
+      json[r'content'] = this.content;
       json[r'kind'] = this.kind;
       json[r'title'] = this.title;
       json[r'usability'] = this.usability;
@@ -85,6 +91,8 @@ class Exercise {
       assert(() {
         assert(json.containsKey(r'meta'), 'Required key "Exercise[meta]" is missing from JSON.');
         assert(json[r'meta'] != null, 'Required key "Exercise[meta]" has a null value in JSON.');
+        assert(json.containsKey(r'content'), 'Required key "Exercise[content]" is missing from JSON.');
+        assert(json[r'content'] != null, 'Required key "Exercise[content]" has a null value in JSON.');
         assert(json.containsKey(r'kind'), 'Required key "Exercise[kind]" is missing from JSON.');
         assert(json[r'kind'] != null, 'Required key "Exercise[kind]" has a null value in JSON.');
         assert(json.containsKey(r'title'), 'Required key "Exercise[title]" is missing from JSON.');
@@ -102,6 +110,7 @@ class Exercise {
 
       return Exercise(
         meta: mapCastOfType<String, Object>(json, r'meta')!,
+        content: ExerciseContent.fromJson(json[r'content'])!,
         kind: mapValueOfType<String>(json, r'kind')!,
         title: mapValueOfType<String>(json, r'title')!,
         usability: Usability.fromJson(json[r'usability'])!,
@@ -158,6 +167,7 @@ class Exercise {
   /// The list of required keys that must be present in a JSON.
   static const requiredKeys = <String>{
     'meta',
+    'content',
     'kind',
     'title',
     'usability',

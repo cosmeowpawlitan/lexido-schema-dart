@@ -21,6 +21,11 @@ void main() {
       // TODO
     });
 
+    // ExerciseContent content
+    test('to test the property `content`', () async {
+      // TODO
+    });
+
     // String kind
     test('to test the property `kind`', () async {
       // TODO

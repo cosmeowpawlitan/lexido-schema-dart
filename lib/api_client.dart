@@ -186,6 +186,8 @@ class ApiClient {
           return BookkeepingInner.fromJson(value);
         case 'Exercise':
           return Exercise.fromJson(value);
+        case 'ExerciseContent':
+          return ExerciseContent.fromJson(value);
         case 'Expenditure':
           return Expenditure.fromJson(value);
         case 'ExpenditureSplit':

@@ -5,6 +5,7 @@ README.md
 analysis_options.yaml
 doc/BookkeepingInner.md
 doc/Exercise.md
+doc/ExerciseContent.md
 doc/Expenditure.md
 doc/ExpenditureSplit.md
 doc/FillInTheBlank.md
@@ -33,6 +34,7 @@ lib/auth/http_bearer_auth.dart
 lib/auth/oauth.dart
 lib/model/bookkeeping_inner.dart
 lib/model/exercise.dart
+lib/model/exercise_content.dart
 lib/model/expenditure.dart
 lib/model/expenditure_split.dart
 lib/model/fill_in_the_blank.dart

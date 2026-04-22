@@ -9,6 +9,7 @@ import 'package:openapi/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **meta** | **Map<String, Object>** |  | [default to const {}]
+**content** | [**ExerciseContent**](ExerciseContent.md) |  | 
 **kind** | **String** |  | 
 **title** | **String** |  | 
 **usability** | [**Usability**](Usability.md) |  | 

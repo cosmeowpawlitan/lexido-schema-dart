@@ -31,6 +31,7 @@ part 'auth/http_bearer_auth.dart';
 
 part 'model/bookkeeping_inner.dart';
 part 'model/exercise.dart';
+part 'model/exercise_content.dart';
 part 'model/expenditure.dart';
 part 'model/expenditure_split.dart';
 part 'model/fill_in_the_blank.dart';
