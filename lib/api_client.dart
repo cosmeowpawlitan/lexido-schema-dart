@@ -196,6 +196,8 @@ class ApiClient {
           return FillInTheBlank.fromJson(value);
         case 'MCQuestion':
           return MCQuestion.fromJson(value);
+        case 'NewsComprehensionExercise':
+          return NewsComprehensionExercise.fromJson(value);
         case 'OpeningBalance':
           return OpeningBalance.fromJson(value);
         case 'Option':
@@ -220,6 +222,8 @@ class ApiClient {
           return TrueFalseNotGivenQuestion.fromJson(value);
         case 'Usability':
           return Usability.fromJson(value);
+        case 'VideoListeningExercise':
+          return VideoListeningExercise.fromJson(value);
         default:
           dynamic match;
           if (value is List && (match = _regList.firstMatch(targetType)?.group(1)) != null) {

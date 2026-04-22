@@ -59,6 +59,7 @@ Class | Method | HTTP request | Description
  - [ExpenditureSplit](doc//ExpenditureSplit.md)
  - [FillInTheBlank](doc//FillInTheBlank.md)
  - [MCQuestion](doc//MCQuestion.md)
+ - [NewsComprehensionExercise](doc//NewsComprehensionExercise.md)
  - [OpeningBalance](doc//OpeningBalance.md)
  - [Option](doc//Option.md)
  - [Point](doc//Point.md)
@@ -71,6 +72,7 @@ Class | Method | HTTP request | Description
  - [TrueFalseNotGivenEnum](doc//TrueFalseNotGivenEnum.md)
  - [TrueFalseNotGivenQuestion](doc//TrueFalseNotGivenQuestion.md)
  - [Usability](doc//Usability.md)
+ - [VideoListeningExercise](doc//VideoListeningExercise.md)
 
 
 ## Documentation For Authorization

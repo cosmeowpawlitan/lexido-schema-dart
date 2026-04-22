@@ -36,6 +36,7 @@ part 'model/expenditure.dart';
 part 'model/expenditure_split.dart';
 part 'model/fill_in_the_blank.dart';
 part 'model/mc_question.dart';
+part 'model/news_comprehension_exercise.dart';
 part 'model/opening_balance.dart';
 part 'model/option.dart';
 part 'model/point.dart';
@@ -48,6 +49,7 @@ part 'model/requisition_status.dart';
 part 'model/true_false_not_given_enum.dart';
 part 'model/true_false_not_given_question.dart';
 part 'model/usability.dart';
+part 'model/video_listening_exercise.dart';
 
 
 /// An [ApiClient] instance that uses the default values obtained from
