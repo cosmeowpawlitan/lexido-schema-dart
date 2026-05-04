@@ -8,7 +8,7 @@ import 'package:openapi/api.dart';
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**content** | **Object** |  | 
+**content** | **BuiltMap&lt;String, String&gt;** |  | 
 **score** | **int** |  | 
 **difficultness** | **int** |  | 
 **reference** | **String** |  | 

@@ -1,22 +1,13 @@
-//
-// AUTO-GENERATED FILE, DO NOT MODIFY!
-//
-// @dart=2.18
-
-// ignore_for_file: unused_element, unused_import
-// ignore_for_file: always_put_required_named_parameters_first
-// ignore_for_file: constant_identifier_names
-// ignore_for_file: lines_longer_than_80_chars
-
-import 'package:openapi/api.dart';
 import 'package:test/test.dart';
+import 'package:openapi/openapi.dart';
 
 // tests for FillInTheBlank
 void main() {
-  // final instance = FillInTheBlank();
+  final instance = FillInTheBlankBuilder();
+  // TODO add properties to the builder and call build()
 
-  group('test FillInTheBlank', () {
-    // Object content
+  group(FillInTheBlank, () {
+    // BuiltMap<String, String> content
     test('to test the property `content`', () async {
       // TODO
     });
@@ -46,7 +37,5 @@ void main() {
       // TODO
     });
 
-
   });
-
 }
